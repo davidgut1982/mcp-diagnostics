@@ -33,10 +33,10 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/davidgut/mcp-diagnostics"
-Repository = "https://github.com/davidgut/mcp-diagnostics"
-Issues = "https://github.com/davidgut/mcp-diagnostics/issues"
-Documentation = "https://github.com/davidgut/mcp-diagnostics#readme"
+Homepage = "https://github.com/davidgut1982/mcp-diagnostics"
+Repository = "https://github.com/davidgut1982/mcp-diagnostics"
+Issues = "https://github.com/davidgut1982/mcp-diagnostics/issues"
+Documentation = "https://github.com/davidgut1982/mcp-diagnostics#readme"
 
 [project.optional-dependencies]
 dev = [

@@ -3,7 +3,7 @@
 [![PyPI version](https://badge.fury.io/py/mcp-diagnostics.svg)](https://badge.fury.io/py/mcp-diagnostics)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-68%20passing-brightgreen.svg)](https://github.com/davidgut/mcp-diagnostics)
+[![Tests](https://img.shields.io/badge/tests-68%20passing-brightgreen.svg)](https://github.com/davidgut1982/mcp-diagnostics)
 
 Production-ready MCP server for infrastructure diagnostics: health probes, configuration validation, and multi-server monitoring.
 
@@ -299,9 +299,9 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## Repository
 
-- **GitHub**: [https://github.com/latvian-lab/diagnostic-mcp](https://github.com/latvian-lab/diagnostic-mcp)
-- **Issues**: [https://github.com/latvian-lab/diagnostic-mcp/issues](https://github.com/latvian-lab/diagnostic-mcp/issues)
-- **PyPI**: [https://pypi.org/project/diagnostic-mcp/](https://pypi.org/project/diagnostic-mcp/)
+- **GitHub**: [https://github.com/davidgut1982/mcp-diagnostics](https://github.com/davidgut1982/mcp-diagnostics)
+- **Issues**: [https://github.com/davidgut1982/mcp-diagnostics/issues](https://github.com/davidgut1982/mcp-diagnostics/issues)
+- **PyPI**: [https://pypi.org/project/mcp-diagnostics/](https://pypi.org/project/mcp-diagnostics/)
 
 ## License
 
