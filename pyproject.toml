@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp-diagnostics"
+version = "1.0.0"
+description = "Production-ready MCP server for infrastructure diagnostics: health probes, configuration validation, and multi-server monitoring"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "David Gutowsky", email = "david.gutowsky@gmail.com"}
+]
+keywords = ["mcp", "diagnostics", "health-check", "monitoring", "infrastructure", "kubernetes", "probes"]
+dependencies = [
+    "mcp>=0.9.0",
+    "sentry-sdk>=2.0.0",
+    "requests>=2.31.0",
+    "httpx>=0.27.0",
+    "uvicorn>=0.27.0",
+    "starlette>=0.36.0",
+    "supabase>=2.0.0",
+    "pyyaml>=6.0",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Testing",
+]
+
+[project.urls]
+Homepage = "https://github.com/davidgut/mcp-diagnostics"
+Repository = "https://github.com/davidgut/mcp-diagnostics"
+Issues = "https://github.com/davidgut/mcp-diagnostics/issues"
+Documentation = "https://github.com/davidgut/mcp-diagnostics#readme"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[project.scripts]
+mcp-diagnostics = "diagnostic_mcp.server:main"
+mcp-diagnostics-cli = "diagnostic_mcp.cli:main"

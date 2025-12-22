@@ -1,0 +1,43 @@
+[Unit]
+Description=Diagnostic MCP HTTP Server
+Documentation=file:///srv/latvian_mcp/servers/diagnostic-mcp/HEALTH_PROBES.md
+After=network.target
+
+[Service]
+Type=simple
+User=david
+WorkingDirectory=/srv/latvian_mcp/servers/diagnostic-mcp
+Environment="PATH=/usr/local/bin:/usr/bin:/bin"
+Environment="PYTHONUNBUFFERED=1"
+Environment="MCP_HTTP_PORT=5555"
+Environment="MCP_HTTP_HOST=0.0.0.0"
+
+# Load environment variables from .env file (if exists)
+EnvironmentFile=-/srv/latvian_mcp/servers/diagnostic-mcp/.env
+
+# Run HTTP server with health probes
+ExecStart=/usr/bin/python3 /srv/latvian_mcp/servers/diagnostic-mcp/http_server.py \
+    --port 5555 \
+    --host 0.0.0.0 \
+    --startup-duration 30 \
+    --allowed-rejections 100 \
+    --sampling-interval 10 \
+    --degraded-threshold 0.25
+
+# Restart configuration
+Restart=on-failure
+RestartSec=5s
+StartLimitInterval=60s
+StartLimitBurst=3
+
+# Resource limits
+LimitNOFILE=65536
+MemoryMax=512M
+
+# Logging
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=diagnostic-mcp-http
+
+[Install]
+WantedBy=multi-user.target
