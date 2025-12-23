@@ -3,16 +3,13 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mcp-diagnostics"
-version = "1.0.0"
-description = "Production-ready MCP server for infrastructure diagnostics: health probes, configuration validation, and multi-server monitoring"
+name = "diagnostic-mcp"
+version = "1.1.0"
+description = "Diagnostic MCP server: Port consistency, health checks, and configuration validation for MCP infrastructure"
 readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
-authors = [
-    {name = "David Gutowsky", email = "david.gutowsky@gmail.com"}
-]
-keywords = ["mcp", "diagnostics", "health-check", "monitoring", "infrastructure", "kubernetes", "probes"]
+authors = [{name = "Diagnostic MCP Contributors"}]
 dependencies = [
     "mcp>=0.9.0",
     "sentry-sdk>=2.0.0",
@@ -33,10 +30,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/davidgut1982/mcp-diagnostics"
-Repository = "https://github.com/davidgut1982/mcp-diagnostics"
-Issues = "https://github.com/davidgut1982/mcp-diagnostics/issues"
-Documentation = "https://github.com/davidgut1982/mcp-diagnostics#readme"
+Homepage = "https://github.com/yourusername/diagnostic-mcp"
+Repository = "https://github.com/yourusername/diagnostic-mcp"
+Issues = "https://github.com/yourusername/diagnostic-mcp/issues"
 
 [project.optional-dependencies]
 dev = [
@@ -46,5 +42,4 @@ dev = [
 ]
 
 [project.scripts]
-mcp-diagnostics = "diagnostic_mcp.server:main"
-mcp-diagnostics-cli = "diagnostic_mcp.cli:main"
+diagnostic-mcp = "diagnostic_mcp.server:main"

@@ -1,15 +1,15 @@
-# mcp-diagnostics
+# diagnostic-mcp
 
-[![PyPI version](https://badge.fury.io/py/mcp-diagnostics.svg)](https://badge.fury.io/py/mcp-diagnostics)
+[![PyPI version](https://badge.fury.io/py/diagnostic-mcp.svg)](https://badge.fury.io/py/diagnostic-mcp)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-68%20passing-brightgreen.svg)](https://github.com/davidgut1982/mcp-diagnostics)
+[![Tests](https://img.shields.io/badge/tests-passing-brightgreen.svg)](https://github.com/latvian-lab/diagnostic-mcp/actions)
 
-Production-ready MCP server for infrastructure diagnostics: health probes, configuration validation, and multi-server monitoring.
+MCP server providing comprehensive diagnostic tools for monitoring and validating MCP infrastructure health and configuration.
 
 ## Overview
 
-mcp-diagnostics provides comprehensive diagnostic capabilities for monitoring and validating the health and configuration of all MCP servers in your infrastructure. It offers Kubernetes-style health probes, authentication, historical tracking, port consistency checks, configuration validation, and comprehensive diagnostic reports.
+diagnostic-mcp provides comprehensive diagnostic capabilities for monitoring and validating the health and configuration of all MCP servers in your system. It offers health probes, port consistency checks, configuration validation, and comprehensive diagnostic reports.
 
 ## Features
 
@@ -55,23 +55,17 @@ mcp-diagnostics provides comprehensive diagnostic capabilities for monitoring an
 ### From PyPI (Recommended)
 
 ```bash
-pip install mcp-diagnostics
+pip install diagnostic-mcp
 ```
 
 ### From Source (Development)
 
 ```bash
-git clone https://github.com/davidgut/mcp-diagnostics.git
-cd mcp-diagnostics
-pip install -e ".[dev]"
-```
-
-Or with uv (recommended):
-
-```bash
-git clone https://github.com/davidgut/mcp-diagnostics.git
-cd mcp-diagnostics
-uv pip install -e ".[dev]"
+git clone https://github.com/latvian-lab/diagnostic-mcp.git
+cd diagnostic-mcp
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -299,9 +293,9 @@ See [CHANGELOG.md](CHANGELOG.md) for version history.
 
 ## Repository
 
-- **GitHub**: [https://github.com/davidgut1982/mcp-diagnostics](https://github.com/davidgut1982/mcp-diagnostics)
-- **Issues**: [https://github.com/davidgut1982/mcp-diagnostics/issues](https://github.com/davidgut1982/mcp-diagnostics/issues)
-- **PyPI**: [https://pypi.org/project/mcp-diagnostics/](https://pypi.org/project/mcp-diagnostics/)
+- **GitHub**: [https://github.com/latvian-lab/diagnostic-mcp](https://github.com/latvian-lab/diagnostic-mcp)
+- **Issues**: [https://github.com/latvian-lab/diagnostic-mcp/issues](https://github.com/latvian-lab/diagnostic-mcp/issues)
+- **PyPI**: [https://pypi.org/project/diagnostic-mcp/](https://pypi.org/project/diagnostic-mcp/)
 
 ## License
 
